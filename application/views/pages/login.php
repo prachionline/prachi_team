@@ -3,16 +3,18 @@
     <div class="inr-title"><h3>Welcome login</h3></div>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 inner-main-box">
+            <div class="col-lg-12 col-md-12 col-sm-12 inner-main-box">               
                 <div class="login-box">   
                     <form action="<?php echo base_url('auth/verify');?>" method="post">
                         <div class="field-wrap">
                             <label>Email Address<span class="req">*</span></label>
-                            <input type="text"  name="uname" />
+                            <input type="text"  name="uname" id="uname" value="<?php echo set_value('uname'); ?>" />
+                            <?php echo form_error('uname'); ?>
                         </div>
                         <div class="field-wrap">
                             <label>Password<span class="req">*</span></label>
-                            <input type="password" name="pass" />
+                            <input type="password" name="pass" id="pass" value="<?php echo set_value('pass'); ?>" />
+                            <?php echo form_error('pass'); ?>
                         </div>
                         <p class="forgot"><a href="#">Forgot Password?</a></p>
                         <button class="button button-block" type="submit" />Log In</button>

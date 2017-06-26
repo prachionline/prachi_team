@@ -9,7 +9,7 @@ class Auth_model extends CI_Model{
 		$this->load->database();
 	}
 
-	public function is_user($user_info){
+	public function is_valid_user($user_info){
 
 		$this->db->select('*');
 

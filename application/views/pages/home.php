@@ -18,7 +18,7 @@
 			<div class="col-md-3 col-xs-6 services-box">
 				<div class="service-inner">
 					<div class="service"> <img src="<?php echo base_url("public/images/tex.png");?>"> </div>
-					<div class="service-heading"> <a href=""> PAN CARD </a> </div>	
+					<div class="service-heading"> <a href="<?php echo base_url("service/pancard");?>"> PAN CARD </a> </div>	
 					<div class="service-desc">  Lorem Ispum is Dumy text </div>	
 				</div>
 			</div>
@@ -26,21 +26,21 @@
 			<div class="col-md-3 col-xs-6 services-box">
 				<div class="service-inner">
 					<div class="service"> <img src="<?php echo base_url("public/images/pos.png");?>"> </div>
-					<div class="service-heading"> <a href=""> POS MACHINE </a> </div>	
+					<div class="service-heading"> <a href="<?php echo base_url("service/pos_machine");?>"> POS MACHINE </a> </div>	
 					<div class="service-desc">  Lorem Ispum is Dumy text </div>	
 				</div>
 			</div>
 			<div class="col-md-3 col-xs-6 services-box">
 				<div class="service-inner">
 					<div class="service"> <img src="<?php echo base_url("public/images/aadhaar.png");?>"> </div>
-					<div class="service-heading"> <a href=""> AADHAR CARD </a> </div>	
+					<div class="service-heading"> <a href="<?php echo base_url("service/aadhar_card");?>"> AADHAR CARD </a> </div>	
 					<div class="service-desc">  Lorem Ispum is Dumy text </div>	
 				</div>
 			</div>
 			<div class="col-md-3 col-xs-6 services-box">
 				<div class="service-inner">
 					<div class="service"> <img src="<?php echo base_url("public/images/money.png");?>"> </div>
-					<div class="service-heading"> <a href=""> MONEY TRANSFER </a> </div>	
+					<div class="service-heading"> <a href="<?php echo base_url("service/mone_transfer");?>"> MONEY TRANSFER </a> </div>	
 					<div class="service-desc">  Lorem Ispum is Dumy text </div>	
 				</div>
 			</div>

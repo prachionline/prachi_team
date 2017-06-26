@@ -3,10 +3,10 @@
 		<div class="col-md-4 col-xs-12 footer-inner">
 			<h4> OUR SERVICES </h4>
 			<ul class="footer-item"> 
-				<li> <a href=""> PAN Card </a>  </li>
-				<li> <a href=""> POS Machine </a></li>
-				<li> <a href=""> Aadhar Card </a></li>
-				<li> <a href=""> Money Transfer </a></li>
+				<li> <a href="<?php echo base_url("service/pancard");?>"> PAN Card </a>  </li>
+				<li> <a href="<?php echo base_url("service/pos_machine");?>"> POS Machine </a></li>
+				<li> <a href="<?php echo base_url("service/aadhar_card");?>"> Aadhar Card </a></li>
+				<li> <a href="<?php echo base_url("service/mone_transfer");?>"> Money Transfer </a></li>
 			</ul>
 		</div>
 		<div class="col-md-4 col-xs-12 footer-inner">

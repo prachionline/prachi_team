@@ -18,12 +18,26 @@ class Auth extends CI_Controller {
 
 
 	public function verify(){
-		$post = $this->input->post();	
 
-		if($this->auth->is_user($post)){
-			echo "Login Success";
-		}else{
-			echo "Login Fialed";
-		}		
+		if ($this->form_validation->run() == FALSE){
+			
+           $this->data = array(
+				"title"      => "Login",
+				"inner_view" => "pages/login"
+			);
+			$this->load->view('layout/main',$this->data);
+
+        }else{
+
+           	$post = $this->input->post();	
+
+			if($this->auth->is_valid_user($post)){
+
+				redirect(base_url('service'));
+
+			}else{
+				redirect(base_url());
+			}	
+        }			
 	}
 }
