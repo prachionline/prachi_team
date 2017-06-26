@@ -6,6 +6,7 @@ class Auth extends CI_Controller {
 	function __construct(){
 		parent::__construct();
 		$this->load->model('Auth_model','auth');
+		$this->form_validation->set_error_delimiters('<p class="error">', '</p>');
 	}
 
 	public function index(){
@@ -18,6 +19,7 @@ class Auth extends CI_Controller {
 
 
 	public function verify(){
+
 
 		if ($this->form_validation->run() == FALSE){
 			
